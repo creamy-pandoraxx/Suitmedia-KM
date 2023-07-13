@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Suit Media KM</string>
+    <string name="tittle_second">Second Screen</string>
+    <string name="tittle_third">Third Screen</string>
+    <string name="empty_state_message">Data not found</string>
+    <string name="welcome">Welcome</string>
+    <string name="name">Your Name</string>
+    <string name="selectedName">Selected User Name</string>
+    <string name="fullName">Full Name</string>
+    <string name="email">Email</string>
+
+</resources>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_firstscreen"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/iv_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="186dp"
+        android:src="@drawable/ic_photo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/inputTextLayout"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="58dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="@+id/iv_photo"
+        app:layout_constraintStart_toStartOf="@+id/iv_photo"
+        app:layout_constraintTop_toBottomOf="@id/iv_photo">
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            style="@style/H3"
+            android:paddingStart="20dp"
+            android:hint="Name"
+            android:background="@drawable/background_text"
+            tools:ignore="TouchTargetSizeCheck"/>
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_palindrome"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="22dp"
+            style="@style/H3"
+            android:paddingStart="20dp"
+            android:hint="Palindrome"
+            android:background="@drawable/background_text"
+            tools:ignore="TouchTargetSizeCheck"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="45dp"
+        app:layout_constraintEnd_toEndOf="@+id/inputTextLayout"
+        app:layout_constraintStart_toStartOf="@+id/inputTextLayout"
+        app:layout_constraintTop_toBottomOf="@id/inputTextLayout">
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_check"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:background="@drawable/background_button"
+            android:fontFamily="@font/poppins_medium"
+            android:text="check"
+            android:textColor="@color/white"
+            tools:ignore="TouchTargetSizeCheck"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_next"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/background_button"
+            android:fontFamily="@font/poppins_medium"
+            android:text="next"
+            android:textColor="@color/white"
+            tools:ignore="TouchTargetSizeCheck"/>
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
